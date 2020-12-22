@@ -95,7 +95,7 @@ void OrderFile::updateOrder() {
 	}
 	ofstream ofs;
 	ofs.open(ORDER_FILE, ios::out | ios::trunc);
-	//将信息重新写入
+	//将信息重新写入 
 	for (int i = 0; i < this->m_Size; ++i) {
 		ofs << "date:" << this->m_orderData[i]["date"] << " ";
 		ofs << "interval:" << this->m_orderData[i]["interval"] << " ";
